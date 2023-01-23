@@ -1,0 +1,14 @@
+server:
+  port: 7070
+
+  spring:
+    datasource:
+      url: jdbc:mysql://localhost:3306/productdb
+      username: root
+      password: 19november2000
+    jpa:
+      datasource-platform: org.hibernate.dialect.MySQL8Dialect
+      hibernate:
+        ddl-auto: update
+    application:
+      name: PRODUCT-SERVICE
