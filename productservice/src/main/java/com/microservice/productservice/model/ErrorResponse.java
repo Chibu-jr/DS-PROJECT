@@ -1,4 +1,4 @@
-package com.microservice.productservice.payload.response;
+package com.microservice.productservice.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

@@ -1,6 +1,5 @@
 package com.microservice.orderservice.payload.response;
 
-
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -10,7 +9,11 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class ErrorResponse {
-    private String errorMessage;
-    private String errorCode;
+public class ProductResponse {
+
+    private long productId;
+    private String productName;
+    private long price;
+    private long quantity;
+
 }

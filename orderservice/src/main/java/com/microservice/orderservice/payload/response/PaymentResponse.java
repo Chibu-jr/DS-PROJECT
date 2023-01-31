@@ -1,6 +1,6 @@
 package com.microservice.orderservice.payload.response;
 
-//import com.microservice.orderservice.utils.PaymentMode;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -16,8 +16,8 @@ public class PaymentResponse {
 
     private long paymentId;
     private String status;
-//    private PaymentMode paymentMode;
     private long amount;
     private Instant paymentDate;
     private long orderId;
+    private String paymentMode;
 }
