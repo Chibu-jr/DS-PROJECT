@@ -1,15 +1,13 @@
-package com.microservice.productservice.entity;
+package com.microservice.productservice.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
-import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
 @Entity
-@Table(name = "PRODUCT_TABLE")
-@Data
+@Table(name = "PRODUCT_DETAILS")
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
@@ -17,8 +15,7 @@ public class Product {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private long productId;
-
+    private Long productId;
     @Column(name = "PRODUCT_NAME")
     private String productName;
 
@@ -27,4 +24,16 @@ public class Product {
 
     @Column(name = "QUANTITY")
     private long quantity;
+
+    public long getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(long quantity) {
+        this.quantity = quantity;
+    }
+
+    public long getProductId() {
+        return productId;
+    }
 }
