@@ -1,0 +1,15 @@
+server:
+  port: 3000
+
+spring:
+  thymeleaf:
+    check-template-location: false
+  datasource:
+    url: jdbc:mysql://${DB_HOST:localhost}:3306/students_db
+    username: root
+    password: 19november2000
+    driverClassName: com.mysql.cj.jdbc.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
