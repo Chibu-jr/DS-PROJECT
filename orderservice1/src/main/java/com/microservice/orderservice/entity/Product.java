@@ -1,4 +1,4 @@
-package com.microservice.productservice.entity;
+package com.microservice.orderservice.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "PRODUCT_TABLE")
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
