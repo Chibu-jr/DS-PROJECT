@@ -23,7 +23,7 @@ Service created in this project are
 --Order Service
 
 According to Our group we connect 3 services that are
-Order Service, Inventory Service and Payment Service that is customer place an order, and that order check its quantity to see if it is available or not, 
+Order Service, Inventory Service and Payment Service that is customer place an order, and that order check its quantity to see if it is available in a stock (calling of Inventory Service) or not, 
 if the required amount is available then Paymant Service is Called to perform payment of such order
 
 we also impliment part of front end by using 
